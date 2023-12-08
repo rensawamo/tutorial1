@@ -154,6 +154,7 @@ func romanToArabic(numeral string) int {
 		'I': 1,
 	}
 
+	// mapでからの配列にappend していく感じで要素集合をつくっていく感じ
 	arabicVals := make([]int, len(numeral)+1)
 
 	for index, digit := range numeral {
